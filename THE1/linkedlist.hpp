@@ -108,7 +108,7 @@ void LinkedList<T>::deleteNode(Node<T>* prevNode)
 
   if (prevNode) {  // if p is not NULL ? keeps the address of the prev.   
     Node<T>* tmp = prevNode->getNext();  // address of the node to delete
-    prevNode->setNext(tmp->getNext()); // p’s next will be next of to-be-deleted
+    prevNode->setNext(tmp->getNext()); // pâ€™s next will be next of to-be-deleted
     delete tmp;
     length--;     // delete it
   }
@@ -128,7 +128,7 @@ Node<T>* LinkedList<T>::findPrev(const T& data)const {
       return p;
     p = p->getNext();
   }
-  return NULL;       // if we are here, not found…! 
+  return NULL;       // if we are here, not foundâ€¦! 
 }
 
 
@@ -143,7 +143,7 @@ Node<T>* LinkedList<T>::findNode(const T& data)const {
       return p; 
     p = p->getNext();
   }
-  return NULL;  // if we are here, not found…! 
+  return NULL;  // if we are here, not foundâ€¦! 
 }
 
 
